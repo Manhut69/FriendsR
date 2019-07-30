@@ -15,7 +15,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     Friend retrievedFriend;
 
-
+    // ratingbar listener for chaning the rating of the emoji
     private class ChangeRating implements RatingBar.OnRatingBarChangeListener {
 
         @Override
@@ -28,7 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
         }
     }
 
-
+    // intialize activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

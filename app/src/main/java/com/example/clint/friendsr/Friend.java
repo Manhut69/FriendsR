@@ -4,29 +4,29 @@ import java.io.Serializable;
 
 public class Friend implements Serializable {
 
+    /*
+        A 'friend' class for an emoji
+        it has a basic constructor and getters.
+     */
+
     private String name, bio;
     private int drawableId;
-    private float rating;
 
-    public Friend(String name, String bio, int drawableId) {
+    Friend(String name, String bio, int drawableId) {
         this.name = name;
         this.bio = bio;
         this.drawableId = drawableId;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getBio() {
+    String getBio() {
         return bio;
     }
 
-    public int getDrawableId() {
+    int getDrawableId() {
         return drawableId;
     }
 }

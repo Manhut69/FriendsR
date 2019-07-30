@@ -13,9 +13,13 @@ import java.util.List;
 
 public class FriendsAdapter extends ArrayAdapter<Friend> {
 
-    ArrayList<Friend> friends;
+    /*
+        A basic adapter class for the display of the emoji
+     */
 
-    public FriendsAdapter(Context context, int resource, ArrayList<Friend> friends) {
+    private ArrayList<Friend> friends;
+
+    FriendsAdapter(Context context, int resource, ArrayList<Friend> friends) {
         super(context, resource, friends);
         this.friends = friends;
     }
